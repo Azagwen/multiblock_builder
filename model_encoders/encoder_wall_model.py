@@ -1,5 +1,5 @@
 import json
-from model_encoders.encode_wall_blockstates import encode_blockstate as e_bs
+from model_encoders.blockstate_templates.wall_blockstates import encode_blockstate as e_bs
 from model_encoders.utils import \
     ModelEncoder, \
     write_json, \

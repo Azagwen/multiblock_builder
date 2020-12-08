@@ -1,7 +1,7 @@
-from model_encoders.full_block_model_encoder import EncodeFullBlockModel
-from model_encoders.stairs_model_encoder import EncodeStairsModel
-from model_encoders.slab_model_encoder import EncodeSlabModel
-from model_encoders.wall_model_encoder import EncodeWallModel
+from model_encoders.encoder_full_block_model import EncodeFullBlockModel
+from model_encoders.encoder_stairs_model import EncodeStairsModel
+from model_encoders.encoder_slab_model import EncodeSlabModel
+from model_encoders.encoder_wall_model import EncodeWallModel
 from model_encoders.utils import \
     output_path, \
     models_path, \
