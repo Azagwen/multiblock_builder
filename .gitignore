@@ -1,5 +1,5 @@
 .idea/
-/build/
-/dist/
-/Output/
-/venv/
+build/
+dist/
+Output/
+venv/
