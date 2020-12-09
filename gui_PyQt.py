@@ -80,7 +80,7 @@ class Gui(QMainWindow):
         return layout, layout_widget
 
     ######################################################
-    ##             MODEL SETTINGS TAB-WIDGET            ##
+    ##             BLOCK SETTINGS TAB-WIDGET            ##
     ######################################################
 
     def settings_tab_widget(self, parent_widget: QWidget):
@@ -194,12 +194,18 @@ class Gui(QMainWindow):
         self.bottom_layout[0].addWidget(self.generate_button(self.bottom_layout[1]))
 
     def clicked(self):
-        print("UwU")
+        print("""
+#######    ######    ######   #######
+##    ##  ##    ##  ##    ##  ##    ##
+#######   ##    ##  ##    ##  #######
+##    ##  ##    ##  ##    ##  ##    ##
+#######    ######    ######   #######
+""")
 
     def on_model_type_changed(self):
         index = self.model_type_cb.currentIndex()
-        type = self.model_type_cb.currentText()
-        print(f"[MODEL TYPE] current type: {type} || at index {index}")
+        model_type = self.model_type_cb.currentText()
+        print(f"[MODEL TYPE] current type: {model_type} || at index {index}")
         if index == 0:
             self.texture_sides_le.setPlaceholderText("Texture All:")
             self.texture_top_le.setVisible(False)
